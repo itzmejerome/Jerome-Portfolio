@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerome Portfolio</title>
+    <link rel="icon" href="images/tlogo.png" type="image/png"> 
+    <link rel="stylesheet" href="style.css">
+
+        <!-- icons dri -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+<body>
+    
+<!-- head -->
+<header class="header">
+    <a href="#" class="logo">Jerome <span> Porcado </span></a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#cert">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- home design dri -->
+<section class="home" id="home">
+<div class="home-content">
+    <h3>Hello, It's me</h3>
+    <h1>Jerome Porcado</h1>
+    <h3>And I'm a <span class="multiple-text"></span></h3>
+    <p>Welcome to my Portfolio, I am Jerome B. Porcado Bachelor of Science in Information Technology.</p>
+
+    <div class="social-media">
+    <a href="https://www.facebook.com/jeromeporcado14" target="_blank"><i class='bx bxl-facebook' ></i></a>
+    <a href="https://github.com/itzmejerome" target="_blank"><i class='bx bxl-github' ></i></a>
+    <a href="https://www.youtube.com/@animetimeeee" target="_blank"><i class='bx bxl-youtube'></i></a>
+    <a href="https://www.linkedin.com/in/jerome-porcado-662b982a6/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+</div>
+<a href="https://docs.google.com/document/d/1PibEBeTGqAbNDooFuni0nNZ-wOoPbRb7/export?format=docx" class="btn" target="_blank">Download CV</a>
+</div>
+
+<div class="home-img">
+    <img src="images/profile.png" alt="">
+
+</div>
+</section>
+
+<!-- about section -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/profile2.png" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span> Me </span></h2>
+        <h3>Jerome B. Porcado</h3>
+        <p>As a dedicated Information Technology student at Mindanao State University, Naawan, I am immersed in the dynamic world of IT. Passionate about acquiring knowledge and honing practical skills, I'm committed to staying at the forefront of technology trends. My academic journey equips me with a strong foundation in IT.</p>
+        <button class="btn" onclick="window.dialog.showModal();">Read More</button>
+
+        <dialog id="dialog">
+            <h1><i class='bx bxs-info-circle'></i></i> About</h1>
+            <p>Enthusiastic and results-driven Information Technology student with a strong passion for leveraging technology to drive innovation. Demonstrated proficiency in programming languages. Adaptable and flexible, capable of navigating evolving project requirements and priorities.
+
+                Driven by a commitment to continuous learning, I have successfully contributed to significant projects, most notably the development and implementation of the Cemetery Information Management System for the Local Government Unit in Lugait. This experience has honed my technical skills in web development, database management, and version control.
+                
+                Currently pursuing a Bachelor of Science in Information Technology at Mindanao State University at Naawan. My educational journey has equipped me with a solid foundation in IT, covering areas such as programming, database management and full stack developer.
+                
+                I am eager to apply my skills and knowledge in a professional setting, contributing to innovative projects and furthering my growth as a tech professional. Seeking opportunities that align with my passion for creating impactful solutions through technology while continuing to expand my expertise in programming and project management methodologies.</p>
+           
+
+            <button onclick="window.dialog.close();" aria-label="close" class="x"><i class='bx bx-x'></i></button>
+        </dialog>
+
+    </div>
+
+</section>
+
+
+<!-- Service dri -->
+<section class="services" id="services">
+    <h2 class="heading">My <span> Services </span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Developer</h3>
+            <p>I specialize in creating websites. From the basics features, I ensure your web presence aligns with modern design standards.</p>
+
+            <button class="btn" onclick="window.dialog2.showModal();">Read More</button>
+            <dialog id="dialog2">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>My journey in web development begins with a solid grasp of HTML for crafting web page structures, CSS for styling, and JavaScript for adding interactive elements. I'm progressing toward mastering front-end frameworks like Bootstrap and exploring back-end languages such as Node.js and PHP. I enhance my skills by creating simple websites and gradually taking on more complex projects.</p>
+               
+    
+                <button onclick="window.dialog2.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-laptop'></i>
+            <h3>Code Debugger</h3>
+            <p>I employ debugging tools within my coding environment. I am experimenting and refining my abilities to ensure error-free code. </p>
+            <button class="btn" onclick="window.dialog3.showModal();">Read More</button>
+            <dialog id="dialog3">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>I focus on honing my problem-solving skills by understanding common programming errors and utilizing debugging tools in my coding environment. Active participation in code reviews allows me to learn from experienced developers, recognizing that hands-on experience and experimentation are crucial for improving my debugging skills.</p>
+               
+    
+                <button onclick="window.dialog3.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-videos' ></i>
+            <h3>Editor</h3>
+            <p>I am navigating the basics of cropping, resizing for images, while delving into cutting, trimming, and transition techniques for videos.</p>
+            <button class="btn" onclick="window.dialog4.showModal();">Read More</button>
+            <dialog id="dialog4">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>I am on a journey to master the art of photo and video editing. Starting with fundamental tools in software like Adobe Photoshop and Premiere Pro, I am navigating the basics of cropping, resizing, and color correction for images, while delving into cutting, trimming, and transition techniques for videos. Through hands-on practice with personal photos and short clips, I am gradually honing my editing skills. Engaging with online tutorials and communities keeps me abreast of the latest trends and tools, fostering my growth in the captivating world of photo and video editing.</p>
+               
+    
+                <button onclick="window.dialog4.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-chat' ></i>
+            <h3>Consultations </h3>
+            <p>I provide guidance and solutions tailored to your needs. From hardware to software, I offer insights and recommendations.</p>
+            <button class="btn" onclick="window.dialog5.showModal();">Read More</button>
+            <dialog id="dialog5">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>I excel in providing tailored guidance and solutions to meet your specific needs. My expertise spans from hardware to software, where I offer valuable insights and well-informed recommendations. Engaging in effective communication, I strive to assist and empower individuals by addressing their queries and concerns in the realm of information technology.</p>
+               
+    
+                <button onclick="window.dialog5.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-data' ></i>
+            <h3>Database </h3>
+            <p>I design and maintain robust database systems, ensuring efficient data storage, retrieval, and security.</p>
+            <button class="btn" onclick="window.dialog6.showModal();">Read More</button>
+            <dialog id="dialog6">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>I'm delving into databases, understanding fundamentals like relational databases and basic SQL queries. I practice designing simple database structures and gain hands-on experience with beginner-friendly database management systems like SQLite.</p>
+               
+    
+                <button onclick="window.dialog6.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        <div class="services-box">
+            <i class='bx bxs-wrench' ></i>
+            <h3>Repair Services</h3>
+            <p>Troubleshooting software glitches to replacing hardware components, I'm here to bring your devices back to optimal performance.</p>
+            <button class="btn" onclick="window.dialog7.showModal();">Read More</button>
+            <dialog id="dialog7">
+                <h1><i class='bx bxs-info-circle'></i></i></h1>
+                <p>In the realm of IT support, I'm familiarizing myself with common hardware components and developing basic troubleshooting skills for software issues. I practice tasks such as installing and uninstalling software, gradually exploring more advanced topics like operating system installations and hardware upgrades as my confidence grows.</p>
+               
+    
+                <button onclick="window.dialog7.close();" aria-label="close" class="x"><h2><i class='bx bx-x' ></i></h2></button>
+            </dialog>
+        </div>
+        
+    </div>
+</section>
+
+<!-- certificates dri -->
+<section class="cert" id="cert">
+    <h2 class="heading">Latest <span> Certificate </span></h2>
+
+    <div class="cert-container">
+        <div class="cert-box">
+            <img src="images/cert1.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>CSS Crash Course For Beginners</p>
+                <a href="https://www.udemy.com/certificate/UC-4d12a8d2-537e-41ec-89a3-47b38c1d7a6d/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="cert-box">
+            <img src="images/cert2.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>Business development and sales processes - a bird's eye view</p>
+                <a href="https://www.udemy.com/certificate/UC-65a358d9-9190-42e9-b165-52ff0f2180cf/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="cert-box">
+            <img src="images/cert3.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>Learn HTML and CSS from Beginning to Advanced</p>
+                <a href="https://www.udemy.com/certificate/UC-913dd52b-4ce3-42ec-913a-37ceb96acfa8/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="cert-box">
+            <img src="images/cert4.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>Windows Command Mastery for Ethical Hackers</p>
+                <a href="https://www.udemy.com/certificate/UC-4599f6db-9793-489c-8041-02c8a1a60bf3/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="cert-box">
+            <img src="images/cert5.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>Emotional Intelligence for Software Engineers and Developers</p>
+                <a href="https://www.udemy.com/certificate/UC-f94da2aa-d67a-4c46-9e6d-f3e3b43d8474/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="cert-box">
+            <img src="images/cert6.jpg" alt="">
+            <div class="cert-layer">
+                <h4>Udemy </h4>
+                <p>Profitable App Development Blueprint for Startups</p>
+                <a href="https://www.udemy.com/certificate/UC-9276722e-e8c7-4673-9015-cc6f8e709bbc/" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact dri -->
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form action="processForm.php" method="post">
+        
+        <div class="input-box">
+            <input type="text" name="fullName" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" name="mobileNumber" placeholder="Mobile Number">
+            <input type="text" name="emailSubject" placeholder="Email Subject">
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- footer dri -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by Jerome Porcado | All rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+    </div>
+</footer>
+
+<!-- js dri -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
