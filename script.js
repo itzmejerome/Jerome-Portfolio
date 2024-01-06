@@ -1,85 +1,56 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let menuIcon = document.querySelector('#menu-icon');
-    let navbar = document.querySelectorAll('.nav a');
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('header nav a');
+let menuIcon =document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x');
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
-        navbar.forEach(link => {
-            link.classList.toggle('active');
-        });
-    };
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            let targetId = this.getAttribute('href').substring(1);
-            let targetSection = document.getElementById(targetId);
-    
-            if (targetSection) {
-                smoothScrollTo(targetSection);
-            }
-        });
+
+
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+            });
+
+            document.querySelectorAll('header nav a[href*="' + id + '"]').forEach(link => {
+                link.classList.add('active');
+            });
+        }
     });
-    
+    let header = document.querySelectorAll('header');
+header.classList.toggle('sticky', window.scrollY >100);
 
-    function smoothScrollTo(element) {
-        const offset = 50;
-        const elementPosition = element.offsetTop;
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('remove');
 
-        window.scrollTo({
-            top: elementPosition - offset,
-            behavior: 'smooth'
-        });
-    }
+};
 
-    window.addEventListener('scroll', function () {
-        let scrollY = window.scrollY;
+ScrollReveal({ 
+    // reset: true, 
+    distance:'80px', duration:2000, delay:200 });
 
-        sections.forEach(sec => {
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
+ScrollReveal().reveal('.home-content, .heading', { original: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .cert-box, .contact form', { original: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { original: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { original: 'left' });
 
-            if (scrollY >= offset && scrollY < offset + height) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-
-                document.querySelectorAll('header nav a[href*="' + id + '"]').forEach(link => {
-                    link.classList.add('active');
-                });
-            }
-        });
-
-        let header = document.querySelector('header');
-        header.classList.toggle('sticky', scrollY > 100);
-
-        menuIcon.classList.remove('bx-x');
-        navbar.forEach(link => {
-            link.classList.remove('remove');
-        });
-    });
-
-    ScrollReveal({
-        distance: '80px',
-        duration: 2000,
-        delay: 200
-    });
-
-    ScrollReveal().reveal('.home-content, .heading', { original: 'top' });
-    ScrollReveal().reveal('.home-img, .services-container, .cert-box, .contact form', { original: 'bottom' });
-    ScrollReveal().reveal('.home-content h1, .about-img', { original: 'left' });
-    ScrollReveal().reveal('.home-content p, .about-content', { original: 'left' });
-
-    const typed = new Typed('.multiple-text', {
-        strings: ['Information Technology', 'Computer Technician', 'Full-Stack Developer'],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true
-    });
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Video Editor', 'Consultant'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
 });
