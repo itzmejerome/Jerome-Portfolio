@@ -198,6 +198,13 @@ span {
     animation: floatImage 4s ease-in-out infinite;
 }
 
+@media only screen and (max-width: 600px) {
+    .home-img {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+}
+
 @keyframes floatImage {
     0% {
         transform: translateY(0);
